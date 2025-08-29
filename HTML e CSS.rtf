@@ -92,9 +92,15 @@ Para usar variaveis criamos o :root\{\} e dentro dela utilizamos dois tra\'e7os 
 \b0\fs22 Iframe significa "Inline frame", serve para criar um quadro/aba de outro site dentro do seu pr\'f3prio site. Tudo o que colocar dentro da tag iframe ser\'e1 somente exibido caso o navegador n\'e3o possa rodar o iframe, por padr\'e3o o tamanho do iframe \'e9 300x150px, para configurar a rolagem do iframe podemos usar o parametro scrolling (auto, yes, no). Caso queira colocar um link clicavel em um iframe, pode utilizar o link da ancora, com target do name do iframe. Utilizando srcdoc podemos definir um conteudo estatico para o iframe.\par
 \b Inconvenientes do iframe :\b0  Mecanismos de busca, Tecnicas de Invas\'e3o atrav\'e9s de terceiro. Para tornar esses iframes mais seguros, podemos colocar a configura\'e7\'e3o sandbox, essa configura\'e7\'e3o n\'e3o permite capturar dados, assim como referrerpolicy que n\'e3o colet\'e1 nenhum tipo de informa\'e7\'e3o do usu\'e1rio.\par
 \par
-\b\fs44 Media Queries\par
-\fs22 Para que serve ? \b0 Servem para consumir conte\'fado em telas diferentes com tamanhos diferentes. Podemos utilizar por exemplo 2 CSS diferentes, um para exibir no site  e um para quando vai imprimir utilizando a palavra media dentro do link de uma css\par
-\b Media Features : \b0\fs44\par
-\fs22\par
+Responsividade\par
+FlexBox : Elementos que s\'e3o capazes de encolher ou crescer, distribuindo espa\'e7o entre itens de acordo com tamanho do container. Utilizando o comando \i display: flex; \i0\'e9 distribuido igualmente o conteudo dentro da pagina visivel, por exemplo 3 paines, se utilizado display flex, e um gap, ser\'e3o utilizados o mesmo espa\'e7o dentro da pagina, ent\'e3o ambos ser\'e3o disponibilzados igualmente n\'e3o importando o tamanho da tela.\par
+\par
+Grid : Grid Layout utiliza a medida "fr" (fra\'e7\'e3o) atribuindo o espa\'e7o disponivel no container entre colunas e linhas do grid. Para come\'e7ar podemos utilizar \i display :grid; \i0 dentro do \i body \i0 e ent\'e3o definir colunas com \i grid-template-columns: repeat(4, 1fr); \i0 assim criando 4 colunas de tamanhos iguais, e tamb\'e9m por exemplo para criar linhas \i grid-template-roles : 100px, repeat(3, 400px) \i0 criando dessa forma 4 linhas, sendo a primeira menor que as seguintes. Para definir os conteudos dentro do grid, deve-se utilizar da seguinte forma como exemplo :\par
+\i grid-template-area :\line\tab "header header header header" \i0 (sinalizando que nesta LINHA, todas as COLUNAS s\'e3o header)\line\tab "navbar main-con main-con main-con" (sinalizando que nesta LINHA a PRIMEIRA COLUNA pertence a navbar e as outras COLUNAS pertencem main-con)\line\tab "navbar cont1 cont2 cont3" (sinalizando que nesta LINHA cada COLUNA pertence a um conteudo diferente)\line\line Para utilizar o grid corretamente, \'e9 nescess\'e1rio utilizar na div (header, footer, main, etc) o atributo \i grid-area : nome-area;\i0  assim sinalizando que toda a area especifica do GRID o qual foi criado.\par
+\par
+\par
+\par
+Media Queries : \par
+Utilizado para melhor controle de responsividade, recurso que permite aplicar propriedades do CSS em somentes tipos especificos de midia/tamanhos de display diferentes. Para utilizar, dentro do css utilizamos \i @media screen (min-width: ???px) and (max-width : ???px) \{\line\i0 (estiliza\'e7\'e3o do CSS neste filtro)\i\line\}\line\i0 Assim o media querie aplica apenas para as telas que tenha as medidas especificadas. A regra \i @media\i0  \'e9 usada para identificar o tipo de midia que uma p\'e1gina est\'e1 sendo utilizada, neste caso, especificado como tamanho da tela do dispositivo.\par
 }
  
