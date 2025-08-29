@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs44\lang22           JavaScript\par
+M\'f3dulo A: Conhecendo o JavaScript\b0\fs22\par
+\b O que faz o JavaScript ? \b0\par
+Client : S\'e3o os computadores e/ou m\'e1quinas que s\'e3o o destinat\'e1rios da informa\'e7\'e3o.\par
+Server : S\'e3o os servidores onde est\'e1 alocado as informa\'e7\'f5es.\par
+HTML = Conte\'fado\par
+CSS = Estilo/Design\par
+JavaScript = Intera\'e7\'e3o/Programa\'e7\'e3o\par
+WWW = World Wide Web\par
+Java \f1\u8800?\f0\lang1046  JavaScript\par
+JavaScript = EcmaScript ( A vers\'e3o padronizada do JavaScript )\par
+\par
+\b\fs44 M\'f3dulo B : Comandos B\'e1sicos do JavaScript\b0\fs22\par
+Armazenamento de dados, Tratamento de dados, Opera\'e7\'f5es com dados\par
+Assistir video, treinar, manuais e referencias, anota\'e7\'f5es, interagir com outros e projetos pessoais. Essas s\'e3o as ferramentas de aprendizagem.\par
+Bibliografia : JavaScript O guia definitivo; JavaScript O guia do programador. Guia de Referencia Mozilla (Gr\'e1tis), e guia de referencia Ecma (Ecma 262) (Gr\'e1tis).\par
+\b Variavel\b0  : Variaveis (var) s\'e3o dados que podem ser armazenados em espa\'e7os diferentes, para identificar a variavel \'e9 nescess\'e1rio criar nome, por exemplo n1, n2, n3. Dentro das variaveis s\'e3o possiveis guardar informa\'e7\'f5es. Os dados podem ser n\'fameros(Number, dentro de numero pode ter infinity e NaN), string (Utilizar sempre ", ' ou ` ), boolean ( true/false). Na d\'favida de qual tipo \'e9, utilize typeof\par
+Exemplo : Tenho um terreno com 6 vagas de carro (A1 at\'e9 A6), 4 vagas para caminh\'f5es (B1 at\'e9 B4) e 6 vagas para motos (C1 at\'e9 C6). Como colocar um carro na vaga ? \line\b vaga a1 = carro1 \b0 (Sinal de = significa recebe), se por exemplo outro carro quiser entrar na mesma vaga, seria impossivel, para colocar o segundo carro seria nescess\'e1rio tirar o primeiro carro para colocar o segundo carro no lugar, assim ficando \b vaga a1 = carro2\b0 , mas se por exemplo n\'e3o quiser que um carro ocupe a vaga, pode deixar \b vaga a1 = null.\par
+Identificadores (N1, N2, etc): \b0 Podem come\'e7ar com letras, $ ou _. N\'e3o podem come\'e7ar com n\'fameros. \'c9 poss\'edvel usar letras e n\'fameros. \'c9 poss\'edvel usar acentos e s\'edmbolos. N\'e3o podem conter espa\'e7os. N\'e3o podem ser palavras reservadas (String, Alert ). Dicas : Mai\'fasculas e Min\'fasculas fazem diferen\'e7a. Tente escolher nomes coerentes para as vari\'e1veis. Evite se tornar um "programador alfabeto" ou "programador contador".\b  \par
+Data Types (Primitivos) :\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Number, dentro de number tamb\'e9m tem infinity e NaN (Not a Number)\par
+{\pntext\f2\'B7\tab}String \par
+{\pntext\f2\'B7\tab}Boolean = Saber se \'e9 verdadeiro ou falso (true/false)\par
+{\pntext\f2\'B7\tab}Null\par
+{\pntext\f2\'B7\tab}Undefined\par
+{\pntext\f2\'B7\tab}Object, dentro de object tem Array\par
+{\pntext\f2\'B7\tab}Function\par
+
+\pard\sa200\sl276\slmult1 string para n\'famero :\par
+Nmber.parseInt(n) (Conver\'e7\'e3o para numero inteiro)\par
+Nmber.parseFloat(n) (Para numero parcial como 3.5)\par
+Number (simplificado, identifica se \'e9 inteiro ou real)\par
+\par
+n\'famero para string :\par
+String(valor)\par
+valor.toString\par
+\par
+Formatando Strings :\par
+var S = 'JavaScript'\par
+'Eu estou aprendendo S' (N\'e3o vai mostrar que est\'e1 aprendendo a v\'e1riavel JavaScript)\par
+'Eu estou aprendendo " + S (Usa concatena\'e7\'e3o)\par
+`Eu estou aprendendo $\{S\}` (Usa template string)\par
+valor.lenght //quantos caracteres a string tem\par
+s.toUppperCase() //tudo para "MAI\'daSCULAS"\par
+s.toLowerCase () //tudo para "min\'fasculas"\par
+\par
+Formatando N\'fameros :\par
+var n1 = 1543.5\par
+.replace('valor' , 'segundo valor')\par
+n1.toFixed(2) \par
+n1.toLocaleString('pt-BR', \{style: 'currency', currency: 'BRL'\}) //transforma para sal\'e1rio\par
+\par
+Operadores do JavaScript :\par
+Aritm\'e9ticos : S\'e3o os operadores utilizados para fazer calculos( +, -, %, *, /, ** ). Exemplo : 5+2 = 7, 5-2 = 3, 5*2 = 10, 5/2 = 2,5, 5%2 = 1 (Divis\'e3o inteira, o resultado \'e9 o resto da divis\'e3o inteira, calcular no papel), 5**2 = 25.\par
+Atribui\'e7\'e3o : S\'e3o valores atribuidos as variaveis ( var a = b + c )\line Auto atribui\'e7\'e3o : S\'e3o valores que se auto atribuem, mudando seu pr\'f3prio valor ( var n = 3, depois n = n +4, assim "n" deixando de valer 3 e virando 7)  ( simplificado n+= 4; Somente pode ser usado pelo mesmo valor)\par
+Relacionais : S\'e3o operadores relacionais da grande maioria da programa\'e7\'e3o( > , < , >= , <= , == , != e n\'e3o possuem ordem de prioridade, sendo da esquerda pra direita ). Exemplo : 5 > 2 = True , 7 < 4 = False , 8 >= 8 true , 9 <= 7 false , 5 == 5 ( sinal unico de igual \'e9 recebe, sinal duplo \'e9 igual) true, 4 != 4 ( n\'e3o igual ) false. Outros exemplos : \line pre\'e7o >= 200.50 // o pre\'e7o \'e9 maior ou igual a 200.50 ?\line idade < 18 // a idade \'e9 menor do que 18 ?\line curso == 'JavaScript' // o curso \'e9 JavaScript ?\line n1 != n2 // o primeiro n\'famero \'e9 diferente do segundo ?\line 5 == 5 true, 5 == '5' true, por\'e9m 5 === '5' false ( 3 sinais de igualdade, confirma tbm identidade, se \'e9 numero ou string)\par
+L\'f3gicos : ( ! nega\'e7\'e3o , && conju\'e7\'e3o, || disjun\'e7\'e3o, nessa mesma ordem de prioridade caso nescess\'e1rio ), exemplo  : Quero qualquer caneta MENOS vermelha ( ! ), quero uma caneta azul E vermelha ( && ), quero uma caneta azul OU vermelha ( || )\line ! = true or false\line && = s\'f3 funciona se ambos forem true para que resultado seja true\line || = basta haver um valor true para que o resultado seja true\line  a > b && b % 2 == 0 ( a ordem de prioridade \'e9 operadores aritm\'e9ticos, depois operadores relacionais, depois operadores l\'f3gicos ) a = 5, b = 8. ent\'e3o segue o calculo : b % 2 == 0 (resultado ser\'e1 true), depois a > b (false), depois false && true == true ? A resposta \'e9 false.\line Outros exemplos : idade >= 15 && idade <= 17 // a idade est\'e1 entre 15 e 17, incluindo esses dois valores ?\line estado == ''RJ' || estado == 'SP' // o estado \'e9 RJ ou SP ?\line sal\'e1rio > 1500 && sexo != 'M' // o sal\'e1rio \'e9 acime de 1500 e n\'e3o \'e9 homem ?\line\par
+Tern\'e1rio : Operadores tern\'e1rios tem 3 partes, o primeiro \'e9 teste l\'f3gico (true or false), no meio \'e9 o que acontece se o teste for verdadeiro, e no final o que acontece se o teste for falso ( ? , : )\line Exemplo :  teste ? true : false\line  m\'e9dia >= 7.0 ? aprovado : reprovado\par
+\par
+\b\fs44\lang22 M\'f3dulo C : Conhecendo o DOM\par
+\b0\fs22 Document Object Model (DOM), \'c1rvore DOM, Manipulando DOM\par
+No visual estudios, extens\'e3o Live Server, ajuda a observar rapidamente sem atualizar a p\'e1gina todo o processo de cria\'e7\'e3o. (Cntrl + Shift + P, depois busque por Live Server )\par
+DOM > Document Object Model, ele n\'e3o funciona DENTRO do JS, ele funciona dentro do navegador\par
+\'c1rvore DOM (Quem est\'e1 embaixo \'e9 um "filho" \{child\}, e quem est\'e1 encima \'e9 o pai \{parent\})> window (Tudo dentro do java script est\'e1 aqui) > Location(URL, p\'e1gina atual, p\'e1gina anterior), document, history (de onde veio, para onde vai). Dentro do document > HTML > head e body. dentro de head > meta, tittle. Dentro do Body > H1, 2 paragrafos, div, dentro de um paragrafo tem strong.\par
+Todos da \'e1rvore DOM s\'e3o elementos,e \'e9 poss\'edvel selecionar esses elementos, seja por Marca/tag, por ID, por Nome, por Classe, e por Seletor\ul .\par
+\ulnone Selecionar por Marca/Tag : Comando getElementsByTagName(Elemento)[numero do elemento caso haja mais que um]. Tags s\'e3o por exemplo <>body>, <head>, <h1>, <p>. Em caso de haver dois ou mais elementos iguais, o primeiro elemento ser\'e1 0, o segundo 1, e assim sucetivamente.\par
+Selecionar por TagName : Comando getElementsByTagName().\par
+Selecionar por ID : Comando getElementsByID(ID)[numero]. Identificar um par\'e1grafo ou div por exemplo\par
+Selecionar por nome : Comando getElementsByName(nome)[numero]. Se tem algum proprieda do estilo name.\par
+Selecionar por Classe : Comando getElementsByClassName()[numero]\par
+Selecionar por Seletor : Comando querySelector(). Toda div \'e9 representada por #, toda classe \'e9 represantada por um ponto(.). (VERS\'c3O MAIS RESCENTE)\par
+Eventos DOM : Dentro de  uma <div>, podemos ter alguns exemplos de evento :\line mouseenter : quando o cursor entrar na zona div\line mousemove : quando o cursor continuar se movendo dentro da div\line mousedown : quando o cursos apertar o bot\'e3o de clique \line mouseup : quando o cursor levantar o bot\'e3o de clique\line click : quando o cursor apenas apertar rapidamente e soltar o bot\'e3o de clique\line mouseout : quando o cursor sair da div\par
+Uma fun\'e7\'e3o em JavaScript \'e9 conjunto de c\'f3digos que v\'e3o ser executadas s\'f3 quando o evento ocorrer. Para que esse bloco de c\'f3digos s\'f3 deve acontecer quando o evento ocorrer, \'e9 colocar dentro de um blocos. function a\'e7\'e3o (parametros) \{ bloco de linhas \}\par
+\par
+\b\fs44 M\'f3dulo D : Condi\'e7\'f5es em JS\line\fs22 Condi\'e7\'f5es Simples, Condi\'e7\'f5es Compostas, Condi\'e7\'f5es Aninhadas, Condi\'e7\'f5es M\'faltiplas\par
+\b0 Sequencia : var n = 3; n +=2; window.alert(n). S\'e3o uma ordem sequencial onde a ordem n\'e3o muda.\line\line condi\'e7\'f5es : comando, comando, bifurca\'e7\'e3o ( um lado de comandos, ou outro lado de comandos), outro comando e final.\line\line if (condi\'e7\'e3o)\{ comando \} else \{ comando \}\line\line tipos de condi\'e7\'e3o :  \line\line condi\'e7\'e3o simples : if(condi\'e7\'e3o) \{true\}\line condi\'e7\'e3o composta : if (condi\'e7\'e3o)\{ true \} else \{ false \}\line condi\'e7\'e3o aninhada : if (condi\'e7\'e3o) \{true\} else if \{false\} else \{false\}\line condi\'e7\'e3o m\'faltipla : \line switch (express\'e3o)\{\line case valor 1 :\line    comando\line    break\line\line case valor 2 :\line    comando\line    break\line\line case valor 3:\line    comando\line    break\line\line default :\line    comando\line    break\line\line\}\par
+\par
+\b\fs44 M\'f3dulo E : Repeti\'e7\'f5es em JavaScript\line\fs22 Repeti\'e7\'f5es com teste no inicio, repeti\'e7\'f5es com teste no final, repeti\'e7\'f5es com controle\par
+Repeti\'e7\'f5es : \b0  Come\'e7a como uma condi\'e7\'e3o, testando se \'e9 verdadeiro ou falso, se for verdade vai executar um bloco e vai voltar ao teste enquanto a condi\'e7\'e3o for verdadeira, assim que a condi\'e7\'e3o for falsa ela avan\'e7a e deixa de continuar testando. Estrutura de repeti\'e7\'e3o com teste l\'f3gico no inicio.\par
+while (condi\'e7\'e3o)\{\par
+\}\par
+Exemplo : function comerPizza()\{\line\tab\tab while (temFatia)\{\line\tab\tab\tab comerFatia()\line\tab\tab\tab\}\line\tab\tab\}\par
+Teste l\'f3gico no final : do \{\line\line\} while (condi\'e7\'e3o)\par
+\par
+\b Estrutura de repeti\'e7\'e3o com v\'e1riavel de controle :\b0  Inicializa\'e7\'e3o, teste l\'f3gico e encremento, na primeira passagem faz inicializa\'e7\'e3o e teste l\'f3gico, iniciando o bloco de comandos, voltar ao loop E adicionar o encremento, fazer teste l\'f3gico e voltar ao loop, e quando o teste for falso ele termina a repeti\'e7\'e3o.\par
+for (inicio ; teste ; incremento) \{\par
+\}\par
+\par
+Exemplo :\par
+for (var c = 1 ; c<= 10 ; c++ ) \{\par
+\}\par
+\par
+\b\fs44 M\'f3dulo F : Avan\'e7andos nos Estudos.\par
+\fs22 Vari\'e1veis Compostas (Arrays), Uso de fun\'e7\'f5es e eventos, Passagem de Par\'e2metros, Exerc\'edcios propostos, Pr\'f3ximos passos.\par
+Vari\'e1veis Simples : \b0 S\'f3 conseguem armazenar \b um valor \b0 por vez\par
+\b Vari\'e1veis Compostas (Arrays) : \b0 Capazes de armazenar \b v\'e1rios valores\b0  em uma mesma estrutura.\par
+Exemplo : antes, era nescess\'e1rio ter v\'e1rias vari\'e1veis em um estacionamento ( var a1,a2,a3, etc), agora tudo pode estar resumido em um s\'f3 variavel, ( var a). Assim utilizando colchetes para separar as vari\'e1veis, ficando assim \b var a = [ 0 , 1 , 2].\b0  (QUASE SEMPRE AS V\'c1RIAVES COMPOSTAS V\'c3O COME\'c7AR COM 0, sendo assim, uma variavel composta de 10 lugares, na verdade vai de 0 a 10). Essa \'e9 uma vari\'e1vel composta do tipo array/vetor, dentro do array tem os elementos(quantidade de vari\'e1veis), \'edndice chave (identificador das v\'e1riaveis come\'e7ando do 0) e conte\'fado valor ( o que est\'e1 dentro da vari\'e1vel). \b var num = [ 5 , 8 , 4] (sendo assim, o valor 5 ser\'e1 identificado pelo n\'famero 0, o valor 8 vai ser o 1, e assim por diante).\par
+Fun\'e7\'f5es : \b0 S\'e3o \b a\'e7\'f5es\b0  executadas que s\'e3o \b chamadas\b0  ou em decorr\'eancia de algum \b evento.\b0\line Uma fun\'e7\'e3o pode receber \b par\'e2metros \b0 e pode retornar um \b resultado\b0 .\par
+Exemplo : A m\'e3e de um garoto dar a \b fun\'e7\'e3o\b0  de comprar leite a seu filho, como isso \'e9 feito n\'e3o importa muito, o que interessa \'e9 o resultado de entregar o leite de volta.\par
+A m\'e3e chamando o filho e dando a ordem, \'e9 uma \b chamada.\line\b0 O dinheiro e o que a m\'e3e quer, s\'e3o \b par\'e2metros de entrada.\line\b0 Ir a merce\'e1ria e comprar, \'e9 uma \b a\'e7\'e3o.\b0\line Entregar o leite \'e9 um \b retorno.\par
+\b0 Exemplo : O uso do bot\'e3o onclick. da chamada a fun\'e7\'e3o\par
+function a\'e7\'e3o(par\'e2metros)\{\par
+\tab return res \par
+\}\par
+a\'e7\'e3o(5) //\'e9 a chamada com valor 5, que se torna o par\'e2metro que pode dar um retorno de resultado de dentro da chave.\par
+\b\fs44 Pr\'f3ximos passos :\par
+\fs22 O caminho at\'e9 aqui : Fundamentos (como surgiu, client e server, como funciona), variaveis e dados (como tratar e armazenar), operadores, condi\'e7\'f5es, repeti\'e7\'f5es, arrays, functions e DOM.\par
+Quais s\'e3o os pr\'f3ximos passos ? \b0 Daqui pra frente, estude HTML5 e CSS para ajudar, estudar bastante functions (arrowfunctions, callbacks),  estudar objetos, modulariza\'e7\'e3o (deixar em arquivos separados),  RegEx (express\'f5es regulares, bom para valida\'e7\'e3o de dados), JSON (Como se fosse uma estrutura de objetos para salvar localmente),  AJAX (Tecnologia de "n\'e3o carregamento" como google imagens e facebook) e NodeJS.\par
+Objetos :  Para declarar um objeto, let amigo = \{nome:'jos\'e9', sexo:'m', peso: 85.4, engordar(p)\{c\'f3digo\} \}. Assim voc\'ea declara um array que ao inv\'e9s de usar indice para identifica\'e7\'e3o como 0,1 e 2, voc\'ea altera o indice por um nome ou n\'famero escolhido (nome, sexo, peso, egondar()), e podendo at\'e9 mesmo armazenar functions dentro do objeto.\par
+}
+ 
